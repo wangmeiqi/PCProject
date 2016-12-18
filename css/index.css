@@ -1,0 +1,2097 @@
+/*默认样式*/
+*{
+    margin: 0;
+    padding: 0;
+    font: 14px "\5FAE\8F6F\96C5\9ED1","\5B8B\4F53",Arial,Helvetica,sans-serif;
+}
+img{
+    border: none;
+    vertical-align: top;
+
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+i,em{
+    font-style: normal;
+}
+b,strong{
+    font-weight: normal;
+}
+input{
+    outline: none;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix{
+    zoom: 1;
+}
+.w1200{
+    width: 1200px;
+    height: 453px;
+    margin: 0 auto;
+}
+/*顶部导航*/
+header{
+    background: #000;
+    margin: 0 auto;
+}
+/*鼠标滚动时候的导航*/
+.nav-Move{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+.nav{
+    margin: 0 auto;
+}
+.navTop{
+    width: 1349px;
+    height: 60px;
+    background: #222;
+    margin: 0 auto;
+
+}
+.navTop h1{
+    width: 105px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 83px;
+    float: left;
+}
+.navTop .navTop-right{
+    width: 917px;
+    height: 56px;
+    line-height: 60px;
+    float: right;
+    margin-right: 84px;
+}
+.navTop .navTop-right .navTop-button{
+    width: 471px ;
+    height: 38px;
+    line-height: 56px ;
+}
+.navTop .navTop-right .navTop-button input{
+    float: left;
+    width: 354px;
+    height: 36px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px 0 0 3px;
+    background: #e3e3e3;
+    margin-top: 11px;
+    padding-left: 5px;
+}
+
+.navTop .navTop-right .navTop-button:hover input{
+    background: #fff;
+    border-color: #6cc900;
+}
+.navTop .navTop-button b{
+    display: inline-block;
+    width: 110px;
+    height: 38px;
+    background: url("../img/topNav-v2.png") no-repeat;
+    margin-top: 11px;
+    float: right;
+}
+.navTop .navTop-right .list{
+    width: 442px;
+    height: 14px;
+    float: right;
+    margin-top: -27px;
+}
+.navTop .navTop-right .list li{
+    float: left;
+    margin-left: 10px;
+    line-height: 14px;
+}
+.navTop .navTop-right .list li.first{
+    padding-left: 30px;
+}
+.navTop .navTop-right .list li a{
+    color: #ccc;
+}
+.navTop .navTop-right .list li:hover a{
+    color: #6cc900;
+}
+.navTop .navTop-right .list li a b{
+    display: inline-block;
+    width: 14px;
+    height: 11px;
+    background: url("../img/nav-upload.png") no-repeat center;
+}
+.navTop .navTop-right .list li:hover b{
+    background: url("../img/nav-upload-green.png")no-repeat center;
+}
+.navTop .navTop-right .list li i{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #999 transparent transparent transparent;
+    vertical-align: bottom;
+    margin-left: 3px;
+}
+.navTop .navTop-right .list li:hover i{
+    border-color: #6cc900 transparent transparent transparent;
+}
+.navTop .navTop-right .list .upload{
+    position: relative;
+}
+.navTop .navTop-right .list .upload em{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 8px solid ;
+    border-color: transparent  transparent #fff transparent  ;
+    position: absolute;
+    top: 22px;
+    left: 23px;
+    z-index: 2;
+
+}
+.navTop .navTop-right .list .upload .upload-List{
+    width: 98px;
+    height: 195px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    position: absolute;
+    top: 38px;
+    left: -20px;
+    z-index: 2;
+
+}
+.navTop .navTop-right .list .upload .upload-List li{
+    height: 32.5px;
+    line-height: 32.5px;
+    width: 98px;
+    text-align: center;
+    margin-left: 0;
+}
+.navTop .navTop-right .list .upload .upload-List li a{
+    font-size: 12px;
+    color:#333
+}
+.navTop .navTop-right .list .upload .upload-List li:hover{
+    background: #f2f2f2;
+}
+.navTop .navTop-right .list .upload .upload-List li:hover a{
+    color:#699f00
+}
+.navTop .navTop-right .list .upload .dis{
+    display: none;
+}
+/*banner图片部分*/
+.banner{
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.banner .bannerImg{
+    width: 1349px;
+    height: 410px;
+    overflow: hidden;
+}
+.banner .bannerImg img{
+    height: 410px;
+    margin: 0 -75px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:none;
+    cursor: pointer;
+}
+.banner ul{
+    width: 220px;
+    height: 343px;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 4px;
+    background:rgba(0,0,0,.8) ;
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    -moz-box-shadow:0 0 50px rgba(0,0,0,.9) inset;   /*内阴影*/
+    -webkit-box-shadow:0 0 50px rgba(0,0,0,.9) inset;
+    box-shadow:0 0 50px black inset;
+    z-index: 1;
+}
+.banner ul li{
+    width: 203px;
+    height: 31px;
+    color: #fff;
+    text-align: left;
+    line-height: 31px;
+    margin: 1px auto;
+    padding-left: 15px;
+}
+.banner ul i{
+    width: 220px;
+    height: 1px;
+    display: block;
+    /*background: -webkit-linear-gradient(right,#fff , #000  );*/
+    background: #444;
+}
+.banner ul li.on{
+    background: #63b504;
+    cursor: pointer;
+}
+
+/*banner图片底部*/
+.bannerBottom{
+    width: 1349px;
+    height: 100px;
+    background: #000;
+    margin: 0 auto;
+}
+.bannerBottom .bannerNav{
+    width: 1178px;
+    height: 88px;
+    border: 1px solid #5aa700;
+    border-radius: 4px;
+    margin: 10px auto 0;
+}
+.bannerBottom .bannerNav ul{
+    height: 75px;
+    padding: 10px 0 0 26px;
+    float: left;
+}
+.bannerBottom .bannerNav ul li{
+    height: 25px;
+    float: left;
+    width: 48px;
+}
+.bannerBottom .bannerNav ul li a{
+    color: #ccc;
+}
+.bannerBottom .bannerNav ul li a:hover{
+    color: #5aa700;
+}
+.bannerBottom .bannerNav ul.navOne{
+    width: 50px;
+}
+.bannerBottom .bannerNav ul.navOne i{
+    margin-left: 0;
+}
+.bannerBottom .bannerNav ul.navTwo{
+    width: 146px;
+}
+.bannerBottom .bannerNav ul.navTwo i{
+    margin-left: 1px;
+}
+.bannerBottom .bannerNav ul.navTwo li{
+    width: 78px;
+}
+.bannerBottom .bannerNav ul.navTwo li.small{
+    width: 64px;
+}
+.bannerBottom .bannerNav ul.navThree{
+    padding-left: 25px;
+    width: 134px;
+}
+.bannerBottom .bannerNav ul.navThree li{
+    width: 54px;
+}
+.bannerBottom .bannerNav ul.navFour{
+    padding-left: 5px;
+    width: 124px;
+}
+.bannerBottom .bannerNav ul.navFour li{
+    width: 56px;
+}
+.bannerBottom .bannerNav ul.navFour i{
+    margin-left: 6px;
+}
+.bannerBottom .bannerNav ul.navEight{
+    padding-left: 0;
+    width: 134px;
+}
+.bannerBottom .bannerNav ul.navEight li{
+    width: 54px;
+}
+.bannerBottom .bannerNav ul.navEight i{
+    margin-left: 2px;
+}
+.bannerBottom .bannerNav ul.navFive{
+    width: 167px;
+    padding-left: 17px;
+}
+.bannerBottom .bannerNav ul.navFive i{
+    margin-left: 4px;
+}
+.bannerBottom .bannerNav ul.navFive li{
+    width: 78px;
+}
+.bannerBottom .bannerNav ul.navSix{
+    width: 223px;
+    padding-left: 20px;
+}
+.bannerBottom .bannerNav ul.navSix li{
+    width: 74px;
+}
+.bannerBottom .bannerNav ul.navSeven{
+    padding: 6px 0 0 15px;
+
+    width: 66px;
+}
+.bannerBottom .bannerNav ul.navSeven li{
+    width: 62px;
+    margin-top: 14px;
+}
+.bannerBottom .bannerNav ul.navSeven li span{
+    width: 36px;
+    height: 30px;
+    display: inline-block;
+    background: url("../img/icon-vipGold_nav.png")no-repeat center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.bannerBottom .bannerNav i{
+    display: inline-block;
+    height: 70px;
+    width: 1px;
+    background: url("../img/navMenu-line.png")no-repeat center;
+}
+
+/*主体内容-今日焦点部分*/
+.content .con-Focus{
+    height: 453px;
+}
+.content .con-Focus .focus-left{
+    float: left;
+}
+.con-Focus .focus{
+    width: 380px;
+    height: 45px;
+    margin: 25px 0 0 10px;
+    border-bottom: 2px solid #699f00;
+}
+.con-Focus .focus h4{
+    display: inline-block;
+}
+.con-Focus .focus h4 a{
+    color: #699f00;
+    font-size: 24px;
+    line-height: 45px;
+}
+.con-Focus .focus i{
+    position: relative;
+}
+.con-Focus .focus i a{
+    display: inline-block;
+    color: #699f00;
+    padding-left: 7px;
+    line-height: 45px;
+}
+.con-Focus .focus i em{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px;
+    border-color:  transparent  transparent transparent #699f00;
+    vertical-align: bottom;
+    position: absolute;
+    top: 3px;
+    left: 36px;
+}
+.con-Focus .focus i b{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px;
+    border-color:  transparent  transparent transparent #fff;
+    vertical-align: bottom;
+    position: absolute;
+    top: 5px;
+    left: 36px;
+}
+.con-Focus .focus .star{
+    position: relative;
+    float: right;
+    width: 66px;
+    height: 26px;
+    border-radius: 10px;
+    border: 1px solid #e9e9e9;
+    margin-top: 10px;
+}
+.con-Focus .focus .star em{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 3px 0 0 8px;
+    background: url("../img/site-icons-qyIndex.png") no-repeat -120px -400px;
+}
+.con-Focus .focus .star i{
+    color: #333;
+    vertical-align: 1px;
+    margin-left: 6px;
+
+}
+.con-Focus .focus .star:hover{
+    background: #7bba00;
+    cursor: pointer;
+}
+.con-Focus .focus .star:hover i{
+    color: #fff;
+}
+.con-Focus .focus .star:hover em{
+    background: url("../img/site-icons-qyIndex.png") no-repeat -200px -1159px;
+}
+.con-Focus .focus .star ul{
+    width: 112px;
+    height: 171px;
+    /*border: 1px solid #cfcfcf;*/
+    border-top: none;
+    position: absolute;
+    bottom: -161px;
+    right: 0;
+    display: none;
+
+}
+.con-Focus .focus .star:hover ul{
+    display: block
+}
+.con-Focus .focus .star ul li{
+    width: 102px;
+    height: 33px;
+    border-left: 1px solid #cfcfcf;
+    border-right: 1px solid #cfcfcf;
+    border-bottom: 1px dotted #cfcfcf;
+    padding-left: 10px;
+    text-align: left;
+    line-height: 33px;
+    background: #fff;
+
+}
+.con-Focus .focus .star ul li.empty{
+    height: 20px;
+    border: none;
+    background: transparent;
+}
+.con-Focus .focus .star ul li.first{
+    border-top: 1px dotted #cfcfcf;
+}
+.con-Focus .focus .star ul li.last{
+    border-bottom:1px solid #cfcfcf;
+}
+.con-Focus .focus .star ul li:hover{
+    background: #699f00;
+    color: #fff;
+    cursor: pointer;
+}
+.con-Focus .focus .star ul li.empty:hover{
+    background: none;
+    color: transparent;
+    cursor: none;
+}
+
+.con-Focus .starCon{
+    margin-left: 10px;
+    width:380px ;
+    border-bottom: 1px dashed #ccc;
+}
+.con-Focus .starCon p a{
+    font-size: 18px;
+    color: #333;
+}
+.con-Focus .starCon p{
+    padding-top: 20px;
+    margin-left: 10px;
+}
+.con-Focus .starCon b a{
+    font-size: 12px;
+    color: #666;
+}
+.con-Focus .starCon b{
+    display: inline-block;
+    padding: 12px 0 7px 0;
+}
+.con-Focus .starCon b.one{
+    margin-left: 10px;
+}
+.con-Focus .starCon b a:hover,.con-Focus .starCon p a:hover{
+    color: #699f00;
+}
+.con-Focus .starList,.con-Focus .starPic{
+    margin-left: 10px;
+    width:380px ;
+}
+.con-Focus .starList li{
+    height: 32px;
+}
+.con-Focus .starList li em{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    vertical-align: -1px;
+    background: url("../img/site-icons-qyIndex.png") -100px -1420px no-repeat;
+}
+.con-Focus .starList li a{
+    color: #333;
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 9px;
+}
+.con-Focus .starList li a:hover{
+    color: #699f00;
+}
+.con-Focus .starPic li{
+    float: left;
+    margin-top: 10px;
+}
+.con-Focus .starPic li.one{
+    margin-right: 20px;
+}
+.con-Focus .starPic li img{
+    width: 180px;
+    height: 101px;
+}
+.con-Focus .starPic li p{
+    width: 180px;
+    height: 35px;
+    background: #f2f2f2;
+    text-align: center;
+}
+.con-Focus .starPic li p a{
+    color: #333;
+    line-height: 35px;
+}
+.con-Focus .starPic li p a:hover{
+    color: #699f00;
+}
+.con-Focus .focus-middle{
+    float: left;
+    width: 380px;
+    height: 442px;
+    margin: 25px 0 0 20px;
+}
+.con-Focus .focus-middle1{
+    position: absolute;
+}
+.con-Focus .focus-middle .middle-Pic{
+    position:relative;
+}
+.con-Focus .focus-middle .middle-Pic .one{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.con-Focus .focus-middle .middle-Pic .two{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.con-Focus .focus-middle .middle-Pic img{
+    width: 380px;
+    height: 252px;
+}
+.con-Focus .focus-middle .middle-Pic span{
+    width: 380px;
+    height: 40px;
+    background:rgba(0,0,0,.5) ;
+    position: absolute;
+    bottom: 0;
+}
+.con-Focus .focus-middle .middle-Pic em{
+    display: inline-block;
+    width: 32px;
+    height: 27px;
+    background: url("../img/index-playBtn.png")no-repeat;
+    position: absolute;
+    left: 7px;
+    bottom: -246px;
+    z-index: 2;
+}
+.con-Focus .focus-middle .middle-Pic div a{
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    left: 39px;
+    bottom: 9px;
+    z-index: 2;
+}
+.con-Focus .focus-middle .middle-Pic .left{
+    width: 25px;
+    height: 43px;
+    background: url("../img/index-arrL-a.png") no-repeat;
+    position: absolute;
+    left: 0;
+    top: 104px;
+    z-index: 2;
+}
+.con-Focus .focus-middle .middle-Pic .right{
+    width: 25px;
+    height: 43px;
+    background: url("../img/index-arrR-a.png") no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 104px;
+    z-index: 2;
+}
+.con-Focus .focus-middle .middle-Pic .left:hover{
+    background: url("../img/index-arrL-v.png") no-repeat;
+}
+.con-Focus .focus-middle .middle-Pic .right:hover{
+    background: url("../img/index-arrR-v.png") no-repeat;
+}
+.con-Focus .focus-middle .middle-List{
+    margin-top: 25px;
+    margin-left: 0;
+    position: relative;
+    top: 252px;
+}
+.con-Focus .focus-Right{
+    float: left;
+    width: 400px;
+    height: 438px;
+    margin-top: 10px
+}
+.con-Focus  .focus-Right ul li{
+    float:left;
+    width: 180px;
+    height: 136px;
+    margin: 15px 0 0 20px;
+}
+.con-Focus  .focus-Right ul li:hover{
+    cursor: pointer;
+}
+.con-Focus .focus-Right ul li img{
+    width: 180px;
+    height: 101px;
+}
+.con-Focus .focus-Right ul li p{
+    width: 180px;
+    height: 35px;
+    background: #f2f2f2;
+    line-height: 35px;
+}
+.con-Focus .focus-Right ul li p a{
+    color: #333;
+    margin-left: 5px;
+}
+.con-Focus .focus-Right ul li p a:hover{
+    color: #699f00;
+}
+/*综艺内容部分*/
+.con-Variety{
+    width: 1200px;
+    height: 427px;
+    padding-top: 32px;
+
+}
+.con-Variety .variety-Left{
+    float: left;
+    width: 980px;
+    padding-left: 10px;
+}
+.con-Variety .variety-Left .top,.con-Variety .variety-Right .top{
+    height: 58px;
+    border-bottom: 2px solid #8ac024;
+
+}
+.con-Variety .variety-Left .top em,.con-Variety .variety-Right .top em{
+    display: inline-block;
+    width: 15px;
+    height: 25px;
+    vertical-align:-3px;
+    background: url("../img/tit-playBtn.png") no-repeat;
+}
+.con-Variety .variety-Left .top span{
+    float: left;
+}
+.con-Variety .variety-Left .top h4,.con-Variety .variety-Right .top h4{
+    display: inline-block;
+    font-size: 27px;
+    color: #699f00;
+    line-height: 60px;
+    cursor: pointer;
+}
+.con-Variety .variety-Left .top i a,.con-Variety .variety-Right .top i a{
+    color: #699f00;
+    margin-left: 14px;
+}
+.con-Variety .variety-Left .top ul{
+    float: left;
+    margin-left: 34px;
+    padding-top: 26px;
+
+}
+.con-Variety .variety-Left .top ul li{
+    float: left;
+    margin-right: 12px;
+
+}
+.con-Variety .variety-Left .top ul li a{
+    color: #000;
+}
+.con-Variety .variety-Left .top ul li a:hover{
+    color: #5aa700;
+}
+.con-Variety .variety-Left .top ul li b{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/divide-i.png") no-repeat;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.con-Variety .variety-Left .left{
+    float: left;
+    padding-top: 25px;
+}
+.con-Variety .variety-Left .left .left-Pic{
+    width: 380px;
+    height: 270px;
+    position: relative;
+    cursor: pointer;
+}
+.con-Variety .variety-Left .left .left-Pic .one{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.con-Variety .variety-Left .left .left-Pic .two{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+
+}
+.con-Variety .variety-Left .left .left-Pic img{
+    width: 100%;
+    height: 100%;
+}
+.con-Variety .variety-Left .left .left-Pic .left{
+    width: 25px;
+    height: 43px;
+    background: url("../img/index-arrL-a.png") no-repeat;
+    position: absolute;
+    left: 0;
+    top: 114px;
+    z-index: 2;
+}
+.con-Variety .variety-Left .left .left-Pic .right{
+    width: 25px;
+    height: 43px;
+    background: url("../img/index-arrR-a.png") no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 114px;
+    z-index: 2;
+}
+.variety-Left .left .left-Pic .left:hover{
+    background: url("../img/index-arrL-v.png") no-repeat;
+}
+.variety-Left .left .left-Pic .right:hover{
+    background: url("../img/index-arrR-v.png") no-repeat;
+}
+.con-Variety .variety-Left .left .left-Pic i{
+    display: block;
+    width: 125px;
+    height: 45px;
+    background: url("../img/icon-today.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.con-Variety .variety-Left .left .left-Pic b{
+    display: block;
+    width: 42px;
+    height: 16px;
+    background: url("../img/video-marks-0623.png") 0 -40px no-repeat;
+    position: absolute;
+    left: 4px;
+    bottom: 60px;
+}
+.con-Variety .variety-Left .left .left-Pic em{
+    display: inline-block;
+    width: 54px;
+    height: 16px;
+    background:rgba(0,0,0,.5) ;
+    position: absolute;
+    right: 4px;
+    bottom: 60px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.con-Variety .variety-Left .left .con{
+    width: 380px;
+    height: 55px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #ebebeb;
+}
+.con-Variety .variety-Left .left .con .title{
+    display: inline-block;
+    color: #333;
+    padding: 9px 0 0 5px;
+}
+.con-Variety .variety-Left .left .con .intro{
+    font-size: 12px;
+    color: #999;
+    display:block;
+    padding-top: 3px;
+}
+.variety-Left .left .con .title:hover,.variety-Left .left .con .intro:hover{
+    color: #699f00;
+}
+.con-Variety .variety-Left .right{
+    float: left;
+    padding-top: 25px;
+    width: 600px;
+}
+.con-Variety .variety-Left .right li,.con-Talk li,.con-Variety .list li{
+    float: left;
+    width: 180px;
+    height: 170px;
+    padding-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.con-Variety .variety-Left .right li img,.con-Talk li img{
+    width: 180px;
+    height: 101px;
+}
+.con-Variety .variety-Left .right i,.con-Talk li i,.con-Variety .list li i{
+    display: block;
+    width: 42px;
+    height: 16px;
+    background: url("../img/video-marks-0623.png") 0 -40px no-repeat;
+    position: absolute;
+    left: 24px;
+    top: 81px;
+}
+.con-Variety .variety-Left .right em,.con-Talk li em{
+    display: inline-block;
+    width: 54px;
+    height: 16px;
+    background:rgba(0,0,0,.5) ;
+    position: absolute;
+    right: 4px;
+    top: 81px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+.con-Variety .variety-Left .right p,.con-Talk li p,.con-Variety .list li p{
+    width: 180px;
+    height: 53px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #ebebeb;
+}
+.con-Variety .variety-Left .right p a,.con-Talk li p a,.con-Variety .list li p a{
+    display: block;
+    color: #333;
+    padding: 9px 0 0 5px;
+}
+.con-Variety .variety-Left .right p a:hover,.con-Talk li p a:hover{
+    color: #699f00;
+}
+.con-Variety .variety-Left .right p b,.con-Talk li p b,.con-Variety .list li p b{
+    font-size: 12px;
+    color: #999;
+    display:block;
+    padding: 3px 0 0 5px;
+}
+
+.con-Variety .variety-Right{
+    float: left;
+    width: 180px;
+    padding-left: 20px;
+}
+.con-Variety .variety-Right .con{
+    padding-top: 25px;
+    height: 324px;
+}
+.con-Variety .variety-Right .con img{
+    width: 180px;
+    height: 101px;
+}
+.con-Variety .variety-Right .con p{
+    display: block;
+    width: 180px;
+    height: 37px;
+    background: #f2f2f2;
+    border-bottom: 1px dotted #ccc;
+    line-height: 37px;
+    text-indent: 10px;
+}
+.con-Variety .variety-Right .con p a,.con-Variety .variety-Right .con li a{
+    color: #333;
+}
+.con-Variety .variety-Right .con a:hover{
+    color: #699f00;
+}
+
+.con-Variety .variety-Right .con ul{
+    background: #f2f2f2;
+    height: 185px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.con-Variety .variety-Right .con li{
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 10px;
+}
+.con-Variety .variety-Right .con li em{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: url("../img/site-icons-qyIndex.png") -100px -1600px no-repeat  ;
+    margin-right: 4px;
+}
+
+/*自制综艺部分*/
+.con-Made-Var,.con-Talk{
+    width: 1200px;
+    height: 216px;
+    margin: 0 auto;
+}
+.con-Made-Var .top{
+    width: 1180px;
+    height: 40px;
+    margin-left: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    line-height: 40px;
+}
+.con-Made-Var .top h4{
+    display: inline-block;
+    font-size: 22px;
+    color: #699f00;
+    cursor: pointer;
+}
+.con-Made-Var .top em{
+    display: inline-block;
+    width: 33px;
+    height: 19px;
+    margin-left: 4px;
+    background: url("../img/rm-only-iqiyi.png") no-repeat;
+    vertical-align: -3px;
+    cursor: pointer;
+}
+.con-Made-Var .top a{
+    color: #699f00;
+    margin-left: 12px;
+}
+.con-Made-Var ul{
+    padding: 15px 0 0 10px;
+}
+.con-Made-Var ul li{
+    float: left;
+    width: 180px;
+    height: 170px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.con-Made-Var ul li.last{
+    margin-right: 0;
+}
+.con-Made-Var ul li img{
+    width: 180px;
+    height: 101px;
+}
+.con-Made-Var ul li p{
+    padding-left: 5px;
+    width: 175px;
+    height: 53px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #ebebeb;
+}
+.con-Made-Var ul li p i{
+    margin: 6px 0 0 0;
+    display: inline-block;
+    height: 19px;
+    border: 1px solid #e7e7e7;
+    background:#fff;
+    padding: 0 2px 0 3px;
+    color: #699f00;
+    font-size: 12px;
+}
+.con-Made-Var ul li p span a{
+    color: #333;
+}
+.con-Made-Var ul li p span a:hover{
+    color: #699f00;
+}
+.con-Talk .top{
+    width: 1180px;
+    height: 40px;
+    margin-left: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    line-height: 40px;
+    padding-bottom: 7px;
+}
+.con-Talk .top h4{
+    float: left;
+    display: inline-block;
+    font-size: 22px;
+    color: #699f00;
+    cursor: pointer;
+}
+.con-Talk .top i a{
+    float: left;
+    color: #699f00;
+    margin-left: 17px;
+    padding-top: 9px;
+
+}
+.con-Talk .top .title{
+    float: left;
+}
+.con-Talk .top .title li{
+    width: 100px;
+    height: 20px;
+    float: left;
+    line-height: 40px;
+}
+.con-Talk .top .title li.first{
+    margin-left: 15px;
+}
+.con-Talk .top .title li.last{
+    margin-left: -22px;
+}
+.con-Talk .top .title li a{
+    color: #333;
+}
+.con-Talk .top .title li a:hover{
+    color: #699f00;
+}
+.con-Talk .top .title li b{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/divide-i.png") no-repeat;
+    margin-left: 7px;
+    vertical-align: middle;
+}
+.con-Talk .con{
+    padding-top: 15px;
+}
+.con-Talk .con li.first{
+    padding-left: 10px;
+}
+.con-Talk .con li.first i{
+    left: 16px;
+}
+/*娱乐*/
+.con-Variety .fun-Left{
+    width: 1180px;
+}
+.con-Variety .variety-Left .fun{
+    width: 1180px;
+}
+.con-Variety .variety-Left .right-Fun{
+    width: 800px;
+}
+.con-Variety .right-Fun .fun-List li em{
+    width: 45px;
+}
+.con-Variety .variety-Left .left .left-Pic .fun-Self{
+    width: 42px;
+    height: 40px;
+    background:url('../img/site-icons-qyIndex.png') -104px -1200px no-repeat;
+    position: absolute;
+    top: 0;
+    left: 342px;
+}
+.con-Variety .variety-Left .right .fun-Pic2{
+    width: 42px;
+    height: 40px;
+    background:url('../img/site-icons-qyIndex.png') -104px -1200px no-repeat;
+    position: absolute;
+    top: 0;
+    left: 162px;
+}
+/*猜你喜欢*/
+.con-Like{
+    padding-top: 20px;
+}
+.con-Variety .fun-Left .like{
+    width: 1180px;
+    margin-left: 0;
+}
+.con-Variety .variety-Left .right li.one{
+    padding-left: 0;
+}
+.con-Variety .variety-Left .like .like-Change{
+    height: 14px;
+    line-height: 14px;
+    float: right;
+    padding-top: 30px;
+}
+.con-Variety .variety-Left .like .like-Change:hover{
+    color: #699f00;
+    cursor: pointer;
+}
+.con-Variety .variety-Left .like .like-Change:hover .like-Icon{
+    background-position: -200px -1500px;
+}
+.con-Variety .variety-Left .like .like-Change .like-Icon{
+    width: 14px;
+    height: 14px;
+    background: url("../img/site-icons-qyIndex.png") -200px -1480px no-repeat;
+    margin-right: 7px;
+}
+.con-Variety .variety-Left .right .like-Pic{
+    width: 54px;
+    height: 17px;
+    background: url("../img/site-icons-mark.png") no-repeat;
+    position: absolute;
+    left: 24px;
+    top: 4px;
+}
+.con-Variety .variety-Left .right .like-Pic2{
+    width: 42px;
+    height: 40px;
+    background:url('../img/site-icons-qyIndex.png') -83px -530px no-repeat;
+    position: absolute;
+    top: 0;
+    left: 161px;
+}
+.con-Variety .variety-Left .right .like-Pic3{
+    width: 69px;
+    height: 17px;
+    background: url("../img/site-icons-mark.png") no-repeat -120px 0 ;
+    position: absolute;
+    left: 24px;
+    top: 4px;
+}
+.con-Variety .variety-Left .right p span,.con-Variety .list li p span{
+    color: #ff722c;
+    font-family: Georgia;
+    position: absolute;
+    right: 5px;
+    bottom: 43px;
+}
+.con-Variety .variety-Left .right p span.two{
+    bottom: 25px;
+}
+.con-Variety .variety-Left .right p span strong .con-Variety .list li p span strong{
+    font-size: 18px;
+    font-family: Georgia;
+}
+/*爱频道*/
+.con-Love{
+    height: 279px;
+}
+.con-Variety .variety-Left .love li{
+    width: 180px;
+    height: 175px;
+    background: #f2f2f2;
+    padding-left: 0;
+    margin-left: 20px;
+    position: relative;
+}
+.con-Variety .variety-Left .love li.one{
+    margin-left: 0;
+}
+.con-Variety .variety-Left .love li div{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background:url('../img/love1.jpg') no-repeat center;
+    background-size: 100% 100%;
+    margin: 14px 0 0 14px;
+    float: left;
+}
+.con-Variety .variety-Left .love li.two div{
+    background:url('../img/love2.jpg') no-repeat center;
+    background-size: 100% 100%;
+}
+.con-Variety .variety-Left .love li.three div{
+    background:url('../img/love3.jpg') no-repeat center;
+    background-size: 100% 100%;
+}
+.con-Variety .variety-Left .love li.four div{
+    background:url('../img/love4.jpg') no-repeat center;
+    background-size: 100% 100%;
+}
+.con-Variety .variety-Left .love li.five div{
+    background:url('../img/love5.jpg') no-repeat center;
+    background-size: 100% 100%;
+}
+.con-Variety .variety-Left .love li.six div{
+    background:url('../img/love6.jpg') no-repeat center;
+    background-size: 100% 100%;
+}
+.con-Variety .variety-Left .love li .love-Title{
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    left: 78px;
+    top: 19px;
+    background: none;
+    border: none;
+}
+.con-Variety .variety-Left .love li .love-Title:hover{
+    color: #699f00;
+}
+.con-Variety .variety-Left .love li span{
+    color: #999;
+    font-size: 12px;
+}
+.con-Variety .variety-Left .love li span.text1{
+    position: absolute;
+    left: 78px;
+    top: 44px;
+}
+.con-Variety .variety-Left .love li span.text2{
+    position: absolute;
+    left: 78px;
+    top: 65px;
+}
+.con-Variety .variety-Left .love li span em{
+    font-size: 12px;
+    color: #333;
+    width: 36px;
+    position: static;
+    background: none;
+}
+.con-Variety .variety-Left .love li span.love-Con{
+    position: absolute;
+    bottom: 57px;
+    left: 15px;
+}
+.con-Variety .variety-Left .love li a{
+    display: block;
+    width: 150px;
+    height: 28px;
+    border-radius: 3px;
+    background:#699f00 ;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+}
+.con-Variety .variety-Left .love li a:hover{
+    background: #7db718;
+}
+.content .ad{
+    width: 1184px;
+    height: 140px;
+    border: 1px solid #8ac024;
+    margin-top: 31px;
+    position: relative;
+    padding: 10px 0;
+}
+.content .ad .box{
+    display: inline-block;
+    /*width: 1124px;*/
+    height: 140px;
+    margin:0 23px;
+    line-height: 140px;
+}
+.content .ad .box .con{
+    cursor: pointer;
+    display: inline-block;
+    width: 170px;
+    height: 140px;
+    margin: 0 8px;
+}
+.content .ad .con .list img{
+    width: 170px;
+}
+.content .ad p{
+    width: 84px;
+    height: 22px;
+    border-radius: 3px 3px 0 0 ;
+    background: #8ac024;
+    position: absolute;
+    left: -1px;
+    top: -22px;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+}
+.content .ad a{
+    display: inline-block;
+    width: 15px;
+    height: 26px;
+    background: url("../img/arrow-left.png") no-repeat;
+    position: absolute;
+    top: 67px;
+}
+.content .ad a.left{
+    left: 4px;
+}
+.content .ad a.right{
+    background: url("../img/arrow-right.png") no-repeat;
+    right: 4px;
+}
+.content .ad a.left:hover{
+    background: url("../img/arrow-left-hover.png") no-repeat;
+}
+.content .ad a.right:hover{
+    background: url("../img/arrow-right-hover.png") no-repeat;
+}
+/*电影*/
+.con-Variety .movie .right ul{
+    width: 1000px;
+}
+.con-Variety .movie .right li,.con-Variety .list li {
+    height: 304px;
+}
+.con-Variety .movie .right li.one,.con-Variety .list li.one{
+    padding-left: 0;
+}
+.con-Variety .movie .right li img,.con-Variety .list li img{
+    height: 236px;
+}
+.con-Variety .movie .right i,.con-Variety .list li i{
+    top: 216px;
+}
+.con-Variety .movie .right li.one i,.con-Variety .list li.one i{
+    left: 4px;
+}
+.con-Variety .movie .right li .vip,.con-Variety .list li .vip{
+    width: 54px;
+    height: 17px;
+    background: url("../img/site-icons-mark.png") no-repeat;
+    position: absolute;
+    left: 24px;
+    top: 4px;
+}
+.con-Variety .movie .right li .video,.con-Variety .list li .video{
+    width: 42px;
+    height: 40px;
+    background: url('../img/site-icons-qyIndex.png') -83px -530px no-repeat;
+    position: absolute;
+    top: 0;
+    left: 161px;
+}
+.con-Variety .movie .right li.one .video,.con-Variety .list li.one .video{
+    left: 141px;
+}
+.con-Variety .list li p a:hover{
+    color:#75b200
+}
+.con-Variety .movie .right li.one .vip{
+    left: 4px;
+}
+.con-Variety .movie .right li .point,.con-Variety .list li .point{
+    width: 69px;
+    height: 17px;
+    background: url("../img/site-icons-mark.png") no-repeat -120px 0;
+    position: absolute;
+    left: 24px;
+    top: 4px;
+}
+
+.con-Variety .list{
+    width: 1200px;
+    height: 304px;
+    padding-left: 10px;
+    float: left;
+    margin-top: -18px;
+}
+.con-Variety .movie-Right .con ul{
+    background: none;
+    height: 304px;
+    border: none;
+}
+.con-Variety .movie-Right .con ul li{
+    width: 171px;
+    height: 20px;
+    margin-bottom: 13px;
+    line-height: 20px;
+    padding-left: 0;
+    margin-top: -2px;
+}
+.con-Variety .movie-Right .con ul li.last{
+    margin-bottom: 0;
+
+}
+.con-Variety .movie-Right .con ul li em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #a6a6a6;
+    border-radius: 3px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.con-Variety .movie-Right .con ul li.on em{
+    background:#75b200;
+}
+.con-Variety .movie-Right .con ul li a{
+    line-height: 21px;
+}
+.con-Variety .movie-Right .con ul li i{
+    display: inline-block;
+    width: 7px;
+    height: 8px;
+    float: right;
+    margin-top: 8px;
+    background: url("../img/site-icons-qyIndex.png") -34px -769px ;
+}
+.con-Variety .movie-Right .con ul li.down i{
+    background: url("../img/site-icons-qyIndex.png") -17px -769px no-repeat ;
+
+}
+.con-Variety .movie-Right .con ul li.up i{
+    background: url("../img/site-icons-qyIndex.png") 0 -769px ;
+}
+.chat-Movie .chat-Left{
+    float: left;
+    width: 600px;
+
+}
+.chat-Movie .chat-Right{
+    float: right;
+    width: 600px;
+}
+.chat-Movie .chat-Right .top li{
+    width: 174px;
+}
+.chat-Movie .chat-Right .top li b{
+    margin-left: 165px;
+    margin-top: -40px;
+}
+.chat-Movie .top{
+    float: left;
+    width: 580px;
+    margin-bottom: 20px;
+}
+.chat-Movie .top ul,.chat-Movie .top span{
+    float: left;
+}
+.chat-Movie .top ul{
+    padding-top: 9px;
+}
+.chat-Movie .top ul li{
+    float: left;
+    margin-right: -2px;
+    height: 19px;
+    width: 123px;
+}
+.chat-Movie .top ul li b{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/divide-i.png") no-repeat;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.chat-Movie .top ul li a{
+    color: #000;
+}
+.chat-Movie .top ul li a:hover{
+    color: #5aa700;
+}
+.chat-Movie .con{
+    width: 600px;
+    position: relative;
+}
+.chat-Movie .con li{
+    position: relative;
+}
+.chat-Movie .con li.last{
+    margin-right: 10px;
+}
+.chat-Movie .con li span {
+    display: inline-block;
+    margin-top: 7px;
+}
+.chat-Movie ul li p{
+    height: 35px;
+}
+.chat-Movie ul li i{
+    display: block;
+    width: 42px;
+    height: 16px;
+    background: url("../img/video-marks-0623.png") 0 -40px no-repeat;
+    position: absolute;
+    left: 4px;
+    top: 81px;
+}
+.chat-Movie ul li .video{
+    width: 42px;
+    height: 40px;
+    background: url('../img/site-icons-qyIndex.png') -83px -530px no-repeat;
+    position: absolute;
+    top: 0;
+    right: -3px;
+}
+.chat-Movie ul li .vip{
+    width: 54px;
+    height: 17px;
+    background: url("../img/site-icons-mark.png") no-repeat;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+/*广告*/
+.advert{
+    width: 1180px;
+    height: 100px;
+    margin: 0 auto ;
+
+}
+.advert img{
+    float: left;
+    width: 1180px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+/*电视剧*/
+.TV .variety-Left .right p{
+    height: 35px;
+}
+.TV .list{
+    margin-top: -33px;
+}
+.TV .list li p{
+    height: 35px;
+}
+.ad1{
+    float: left;
+    margin-left: 85px;
+    margin-bottom: 30px;
+}
+.comicAll .variety-Left .left .con{
+    height: 35px;
+}
+.comicAll .variety-Left .comic{
+    float: left;
+    width: 600px;
+}
+.comicAll .variety-Left .comic ul{
+    width: 200px;
+}
+.comicAll .variety-Left .comic .top{
+    width: 580px;
+}
+.comicAll .variety-Left .right-Fun{
+    width: 200px;
+}
+.comicAll .variety-Left .right li{
+    height: 151px;
+    position: relative;
+}
+.comicAll .variety-Left .right li .p1080{
+    display: block;
+    width: 42px;
+    height: 16px;
+    background: url("../img/video-marks-0623.png") 0 -40px no-repeat;
+    position: absolute;
+    left: 24px;
+    top: 81px;
+}
+.comicAll .variety-Left .right p{
+    height: 35px;
+}
+.comicAll .variety-Left .juv{
+    float: left;
+    width: 400px;
+}
+.comicAll .variety-Left .juv ul li{
+    padding-left: 0;
+    padding-right: 20px;
+}
+.comicAll .variety-Left .juv .right ul{
+    width: 400px;
+}
+.con-Variety .variety-Left .juv .top{
+    width: 380px;
+}
+.con-Variety .variety-Left .juv .top .comic-List{
+    float: left;
+    margin-left: 0;
+    padding-top: 19px;
+}
+.con-Variety .variety-Left .juv .top .comic-List li{
+    float: left;
+    width: 45px;
+    height: 27px;
+    padding-right: 0;
+    margin-right: 0;
+    cursor: pointer;
+}
+.comicAll .variety-Left .juv .right li .p1080{
+    left: 4px;
+}
+.con-Variety .variety-Left .juv .right .fun-Pic2{
+    left:142px ;
+}
+.comicAll .variety-Left .edu{
+    float: left;
+    width: 180px;
+}
+.comicAll .variety-Left .edu .right ul{
+    width: 180px;
+}
+.con-Variety .variety-Left .edu .top{
+    width: 180px;
+}
+.comicAll .variety-Left .edu ul li{
+    padding-left: 0;
+    padding-right: 0;
+}
+.comicAll .variety-Left .edu .right li .p1080{
+    left: 4px;
+}
+
+/*体育 音乐 时尚*/
+.con-Variety .variety-Left .top .sport-List{
+    margin-left: 30px;
+}
+.comicAll .variety-Left .sport .sport-List li{
+    padding-right: 0;
+    margin-right: 8px;
+}
+.comicAll .variety-Left .music ul .first{
+    height: 252px;
+}
+.con-Variety .variety-Left .music ul .first img{
+    height: 252px;
+}
+.comicAll .variety-Left .music ul .first .p1080{
+    top:231px;
+}
+.comicAll .variety-Left .fashion{
+    width: 380px;
+}
+/*原创*/
+.trip{
+    padding-top: 0px;
+}
+.original{
+    padding-top: 0px;
+}
+.original .variety-Left .right p b .user{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+    background: url("../img/icon-user.png") no-repeat center;
+}
+.original .variety-Left .right p{
+    position: relative;
+}
+.original .variety-Left .right p b:hover{
+    color: #699f00;
+}
+.original .variety-Left .right p span{
+    width: 56px;
+    height: 20px;
+    border-radius: 3px;
+    background: #679e00;
+    color:white;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    right: 5px;
+    bottom: 6px;
+    display: none;
+}
+.original .variety-Left .right p span:hover,.original .variety-Right .con li div span:hover{
+    background: #7eb818;
+}
+.original .variety-Left .right p:hover span{
+    display: block;
+}
+.original .variety-Right .con ul{
+    height: 312px;
+    padding: 10px 0 0 0px;
+}
+.original .variety-Right .con li{
+    width: 170px;
+    height: 66px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.original .variety-Right .con li .picture{
+    width: 64px;
+    height: 64px;
+    float: left;
+    cursor: pointer;
+}
+.original .variety-Right .con li img{
+    width: 64px;
+    height: 64px;/*
+    float: left;
+    cursor: pointer;*/
+}
+.original .variety-Right .con li div.conA{
+    width: 96px;
+    height: 65px;
+    float: right;
+}
+.original .variety-Right .con li div .name{
+    font-size: 14px;
+}
+.original .variety-Right .con li div .name:hover,.original .variety-Right .con li div .people:hover{
+    color: #7eb818;
+}
+.original .variety-Right .con li div .people{
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin: 3px 0 3px 0;
+}
+.original .variety-Right .con li div span{
+    display: block;
+    width: 68px;
+    height: 22px;
+    border-radius: 3px;
+    background: #679e00;
+    color:white;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+/*弹层*/
+.original .variety-Right .con li .layer{
+    width: 312px;
+    height: 195px;
+    border: 1px solid #d7d7d7;
+    box-shadow: 1px 1px 2px 1px #d7d7d7;
+    position: absolute;
+    top: -208px;
+    right: 109px;
+    z-index: 2;
+    background: #fff;
+    display: none;
+}
+.original .variety-Right .con li .conA .layer{
+    right: 26px;
+}
+.original .variety-Right .con li .picture:hover .layer{
+    display: block;
+}
+.original .variety-Right .con li .ku:hover .layer{
+    display: block;
+}
+.original .variety-Right .con li .layer i{
+    width: 0;
+    height: 0;
+    border: 6px solid ;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    bottom: -12px;
+    right: 23px;
+}
+.original .variety-Right .con li .layer .bg{
+    width: 100%;
+    height: 73px;
+    background: url("../img/pop_bg.png")no-repeat center;
+    position: relative;
+}
+.original .variety-Right .con li .layer .bg img{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+.original .variety-Right .con li .layer .con-Ori .line-One{
+    height: 42px;
+    line-height: 42px;
+    padding-left: 15px;
+}
+.original .variety-Right .con li .layer .con-Ori .line-One a{
+    color: #000;
+    margin-right: 34px;
+}
+.original .variety-Right .con li .layer .con-Ori  b{
+    color: #999;
+    font-size: 12px;
+}
+.original .variety-Right .con li .layer .con-Ori b strong{
+    font-size: 12px;
+    color: #666;
+}
+.original .variety-Right .con li .layer .con-Ori .line-Two{
+    padding-left: 15px;
+}
+.original .variety-Right .con li .layer .con-Ori .line-Two span{
+    display: inline-block;
+    margin-right: 14px;
+}
+.original .variety-Right .con li .layer .con-Ori p{
+    font-size: 12px;
+    margin-left: 5px;
+    color: #999;
+    background: none;
+    border-bottom: none;
+    margin-top: 10px;
+}
+
+
+/*搞笑 片花*/
+.funny .con{
+    position: inherit;
+}
+.chat-Movie .con{
+    position: inherit;
+}
+.funny .top ul li,.funny .chat-Right .top li{
+    width: 96px;
+    margin-right: -9px;
+}
+.funny .chat-Left .top ul li a{
+    cursor: pointer;
+}
+.funny .top ul li a:hover{
+    color: #699f00;
+}
+.funny .chat-Right .top li.first{
+    width: 200px;
+}
+.funny .chat-Right .top li b{
+    margin-left: 0;
+    margin-top: 0;
+}
+/*游戏视频 奇秀*/
+.comicAll .variety-Left .TV{
+    width: 600px;
+}
+.con-Variety .variety-Left .TV .top{
+    width: 580px;
+}
+.con-Variety .variety-Left .top .TV-List{
+    margin-left: 27px;
+}
+.comicAll .variety-Left .TV .right ul{
+    width: 600px;
+}
+.comicAll .variety-Left .QI{
+    width: 580px;
+}
+/*游戏*/
+.game{
+    padding-top: 15px;
+    height: 257px;
+}
+.game .variety-Left .right p{
+    height: 53px;
+}
+.game .variety-Left .right i{
+    left: 4px;
+}
+.game .variety-Left .right em{
+    right: 24px;
+}
+/*公益*/
+.public{
+    height: 156px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+.public ul{
+    padding-left: 10px;
+}
+.public ul li{
+    float: left;
+    width: 180px;
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.public ul li.last{
+    padding-right: 0;
+}
+.public ul li img{
+    width: 180px;
+    height: 101px;
+}
+.public ul li span{
+    padding-left: 4px;
+    display: block;
+    width: 176px;
+    height: 23px;
+    line-height: 23px;
+    color: white;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 78px;;
+}
+.public ul li p{
+    height: 34px;
+    width: 180px;
+    background: #8cbf24;
+    border-top: 1px solid;
+    border-bottom: 5px solid;
+    border-color: #73a000;
+    line-height: 34px;
+}
+.public ul li p:hover{
+    background: #94c539;
+}
+.public ul li p b{
+    font-size: 22px;
+    color: white;
+    padding-left: 21px;
+}
+.public ul li p a{
+    color: white;
+}
+/*合作*/
+.cooperation{
+    margin-top: 45px;
+    height: 128px;
+    margin-bottom: 50px;
+}
+.cooperation div{
+    margin-left: 10px;
+    width: 589px;
+    height: 126px;
+    border: 1px solid #e7e7e7;
+    float: left;
+    background: #f7f7f7;
+}
+.cooperation .right{
+    border-left:none;
+    margin-left: 0;
+}
+.cooperation div h2{
+    width: 549px;
+    height: 25px;
+    padding: 20px 20px 10px 20px;
+}
+.cooperation div h2 a{
+    font-size: 24px;
+    color: #333;
+}
+.cooperation div h2 a span{
+    font-size: 12px;
+    margin-left: 8px;
+}
+.cooperation div h2 a:hover,.cooperation div ul li a:hover{
+    color: #699f00;
+}
+.cooperation div ul{
+    width: 569px;
+    height: 56px;
+    padding: 0 0 15px 20px;
+}
+.cooperation div ul li{
+    float: left;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+}
+.cooperation div ul li a{
+    color: #000;
+    font-size: 12px;
+}
+.cooperation div.right ul{
+    width: 579px;
+}
+.cooperation div.right ul li{
+    width: 190px;
+}
+/*底部导航*/
+footer .footer{
+    width: 1349px;
+    height: 207px;
+    border-top: 1px solid #ccc;
+}
+footer .footer .ftcont{
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 86px;
+}
+footer .footer .ftcont ul {
+    margin-left: 10px;
+    width: 1180px;
+    height: 58px;
+}
+footer .footer .ftcont ul li{
+    float: left;
+    height: 56px;
+    margin-right: 55px;
+}
+footer .footer .ftcont ul li.last{
+    margin-right: 0;
+}
+footer .footer .ftcont ul.next li,footer .footer .ftcont ul.next{
+    height: 28px;
+}
+footer .footer .ftcont ul li a{
+    font-size: 12px;
+    color: #666;
+}
+footer .footer .ftcont ul li a:hover{
+    color: #699f00;
+}
+footer .footer .ftcont ul li .ft1{
+    margin-bottom: 10px;
+}
+footer .footer .ftcont ul li img{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+footer .footmenu{
+    width: 1349px;
+    height: 18px;
+    padding: 15px 0 10px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+footer .footmenu a{
+    font-size: 12px;
+    color: #000;
+}
+footer .footmenu a:hover{
+    color: #699f00;
+}
+footer .footmenu i{
+    font-size: 12px;
+    margin: 0 5px;
+}
+footer .tc a img{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+footer .tc a{
+    font-size: 12px;
+    color: #666;
+    margin-right: 34px;
+}
+footer .tc{
+    width: 1349px;
+    height: 18px;
+    padding: 5px 0 ;
+    margin: 0 auto;
+    text-align: center;
+}
+footer .copyright a span{
+    font-size: 12px;
+    color: #666;
+}
+footer .copyright a span:hover,footer .copyright a.one:hover{
+    color: #699f00;
+}
+
+
+
+
+
+
